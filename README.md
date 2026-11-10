@@ -24,10 +24,10 @@ O fluxo de dados foi desenhado seguindo a separação de responsabilidades em 4 
 
 ```mermaid
 flowchart LR
-    A["🌐 Kaggle API<br/>(Dataset Fonte)"] -->|01. Ingestão| B["📁 Raw Data<br/>(CSV Original)"]
-    B -->|02. Transformação<br/>(Pandas)| C["📄 Processed Data<br/>(CSV Traduzido/Limpo)"]
-    C -->|03. Carga<br/>(SQLite)| D["🗄️ Database<br/>(insidentes.db)"]
-    D -->|04. Consumo<br/>(SQL + Matplotlib)| E["📊 Analytics / Gráficos<br/>(Ataques por País)"]
+    A[Kaggle API] -->|01. Ingestao| B[CSV Bruto]
+    B -->|02. Transformacao| C[CSV Tratado]
+    C -->|03. Carga| D[(SQLite: insidentes.db)]
+    D -->|04. Consumo| E[Graficos e Analytics]
 ```
 
 ---

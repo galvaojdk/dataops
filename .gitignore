@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# Credenciais e Segredos
+kaggle.json
+**/kaggle.json
+.env
+
+# Ambientes e IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Dados locais e logs (opcional manter os exemplos)
+# *.db
+# *.sqlite3
+

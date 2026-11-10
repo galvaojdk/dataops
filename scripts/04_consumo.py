@@ -24,4 +24,9 @@ plt.xlabel('Quantidade de Ataques')
 plt.title('Quantidade de Ataques por País')
 plt.gca().invert_yaxis()  # País com mais ataques no topo
 plt.tight_layout()
+
+# Salvar gráfico como artefato visual
+plt.savefig('data/grafico_ataques_por_pais.png', dpi=300)
+print("✅ Gráfico exportado para 'data/grafico_ataques_por_pais.png'")
+
 plt.show()
